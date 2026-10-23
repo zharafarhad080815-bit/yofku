@@ -1,0 +1,108 @@
+<!--In this assignment, you will build an Ocean World webpage using Bootstrap. You will add a navigation bar, show loading spinners, create sea-animal cards, and use pagination to browse more content.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ocean World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Ocean World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sea Animals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 text-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sea Animal Cards will go here -->
+             <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq5cBUFOZyoTGvbngI797OPP-OFRzuRUgKRZzYfI8pgA&s" class="card-img-top" alt="Dolphin">
+                    <div class="card-body">
+                        <h5 class="card-title">Dolphin</h5>
+                        <p class="card-text">Dolphins are highly intelligent marine mammals known for their playful behavior and acrobatics.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREB8vzeK5RbbgKMYhslMDP1RURNn6pIcaU-Qgq4U7wQg&s=10" class="card-img-top" alt="Clownfish">
+                    <div class="card-body">
+                        <h5 class="card-title">Clownfish</h5>
+                        <p class="card-text">Clownfish are small, colorful fish that live in sea anemones and are known for their symbiotic relationship.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Great_white_shark.jpghttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdhq6Zz-Ypyarj0seNsyGD2MOEXjsCCGoNgtz6RcSHw&s=10" class="card-img-top" alt="Great White Shark">
+                    <div class="card-body">
+                        <h5 class="card-title">Great White Shark</h5>
+                        <p class="card-text">The Great White Shark is a large predatory fish known for its size, power, and role in marine ecosystems.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Il-ZFoti4IM00MdF4idP0h7yHfv_SVRhfDf-3xrCpQ&s=10" class="card-img-top" alt="Sea Turtle">
+                    <div class="card-body">
+                        <h5 class="card-title">Sea Turtle</h5>
+                        <p class="card-text">Sea turtles are ancient reptiles that have been around for millions of years and are known for their long migrations.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Pagination will go here -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container mt-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
